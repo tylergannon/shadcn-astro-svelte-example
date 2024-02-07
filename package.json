@@ -1,22 +1,30 @@
 {
-  "name": "shadcn-astro-svelte-example",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/check": "^0.4.1",
-    "@astrojs/svelte": "^5.0.3",
-    "astro": "^4.3.3",
-    "svelte": "^5.0.0-next.50",
-    "typescript": "^5.3.3"
-  },
-  "devDependencies": {
-    "eslint-plugin-svelte": "^2.36.0-next.5"
-  }
+	"name": "shadcn-astro-svelte-example",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro check && astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"check": "svelte-check --tsconfig ./tsconfig.json",
+		"lint": "prettier --check . && eslint .",
+		"format": "prettier --write ."
+	},
+	"dependencies": {
+		"@astrojs/check": "^0.4.1",
+		"@astrojs/svelte": "^5.0.3",
+		"astro": "^4.3.3",
+		"svelte": "^5.0.0-next.50",
+		"typescript": "^5.3.3"
+	},
+	"devDependencies": {
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-svelte": "^2.36.0-next.5",
+		"prettier": "^3.2.5",
+		"prettier-plugin-astro": "^0.13.0",
+		"prettier-plugin-svelte": "^3.1.2",
+		"svelte-check": "^3.6.3"
+	}
 }
