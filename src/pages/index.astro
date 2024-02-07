@@ -1,4 +1,7 @@
 ---
+import { ModeWatcher } from 'mode-watcher';
+import ModeSwitch from '$lib/components/ui/mode-switch/ModeSwitch.svelte';
+
 import '../app.pcss';
 ---
 
@@ -11,6 +14,8 @@ import '../app.pcss';
 		<title>Astro</title>
 	</head>
 	<body>
+		<ModeWatcher client:load />
 		<h1>Astro</h1>
+		<ModeSwitch client:load />
 	</body>
 </html>
